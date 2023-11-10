@@ -1,26 +1,27 @@
 pipeline {
     agent any
-    
+
     tools {
         maven 'maven-3.9.5'
         jdk 'jdk17'
     }
-    
+
     environment {
         SCANNER_HOME = tool 'sonar-scanner'
     }
-        
+
+    stages {
         stage('AIT Compile Source Code') {
             steps {
                 sh "mvn compile -f maven-web-app-master/pom.xml"
             }
-        }   
+        }
 
         stage('Maven Test') {
             steps {
                 sh "mvn test -f maven-web-app-master/pom.xml"
             }
-        }    
+        }
 
         stage('AIT Sonarqube Analysis') {
             steps {
@@ -42,7 +43,6 @@ pipeline {
                 }
             }
         }
-		
 
         stage('AIT Build Application') {
             steps {
@@ -69,7 +69,6 @@ pipeline {
                 from: 'ekangakigeorge@gmail.com',
                 attachLog: true
             )
-        } 
-  }
-}
+        }
+    }
 }
