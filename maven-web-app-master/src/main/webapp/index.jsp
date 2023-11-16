@@ -10,6 +10,6 @@
   
   <h4> Learn Here.. Lead Anywhere in the world..!! </h4>
 
-  <h5> We will make Africa Great Again.!! </h5>
+  <h1> We will make Africa Great Again.!! </h1>
 </body>
 </html>
