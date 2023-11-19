@@ -10,6 +10,6 @@
   
   <h4> Learn Here.. Lead Anywhere in the world..!! </h4>
 
-  <h1> We will make Africa Great Again.!! </h1>
+  <h1> SUNDAY NOVEMBER 19 2023 </h1>
 </body>
 </html>
